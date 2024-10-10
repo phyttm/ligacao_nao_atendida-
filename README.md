@@ -9,16 +9,16 @@ horario = input('periodo do dia [manha, tarde ou noite] (sem acento): ')
 
 if ligou == True and nao_atendi == False:
 
-    while data != 'segunda' and data != 'terca' and data != 'quarta' and data != 'quinta' and data != 'sexta' and data != 'sabado' and data != 'domingo':
+   while data != 'segunda' and data != 'terca' and data != 'quarta' and data != 'quinta' and data != 'sexta' and data != 'sabado' and data != 'domingo':
         data = input(f'{data} tem algum caracter errado, tente novamente: ')
         data = data
 
-    while horario != 'manha' and horario != 'tarde' and horario != 'noite':
+   while horario != 'manha' and horario != 'tarde' and horario != 'noite':
         horario = input(f'{horario} tem algum caracter errado, tente novamente: ')
         horario = horario
     
 
-    if data == 'segunda' or data == 'quarta':
+  if data == 'segunda' or data == 'quarta':
         if horario == 'manha':
             print('to estudando')
         elif horario == 'tarde':
@@ -26,7 +26,7 @@ if ligou == True and nao_atendi == False:
         elif horario == 'noite':
             print('to estudando ingles')
     
-    elif data == 'terca':
+  elif data == 'terca':
         if horario == 'manha':
             print('to estudando')
         elif horario == 'tarde':
@@ -34,7 +34,7 @@ if ligou == True and nao_atendi == False:
         elif horario == 'noite':
             print('to querendo dormir')
 
-    elif data == 'quinta' or data == 'sexta':
+   elif data == 'quinta' or data == 'sexta':
         if horario == 'manha':
             print('to estudando')
         elif horario == 'tarde':
@@ -42,5 +42,5 @@ if ligou == True and nao_atendi == False:
         elif horario == 'noite':
             print('to estudando')
 
-    else:
+   else:
         print('nao quero atender')
